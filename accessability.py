@@ -45,3 +45,9 @@ def check_type(result, type_checked, question, question_delay = 0.01):
 def print_dic_list(dic_list):
     for key, value in dic_list.items():
         print(f"{key}:\t{value}")
+
+def go_back(parent=None):
+    if parent is not None:
+        parent()
+    else:
+        print("No previous menu to go back to.")
